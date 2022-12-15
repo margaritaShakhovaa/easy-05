@@ -1,0 +1,15 @@
+@mixin corner-icon($name, $width, $height) {
+	.icon-#{$name} {
+		// пути относительно результирующего файла
+		background-image: url("../icons/#{$name}.svg");
+		background-size: contain;
+		width: $width;
+		height: $height;
+	}
+}
+
+@mixin reset-list() {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}

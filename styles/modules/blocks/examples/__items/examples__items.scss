@@ -1,0 +1,7 @@
+.examples__items {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+	@include reset-list;
+	margin-bottom: 58px;
+}

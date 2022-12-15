@@ -1,0 +1,52 @@
+@import "modules/variables";
+@import "vendor/normalize";
+@import "modules/mixins";
+@import "vendor/fonts.css";
+@import "modules/blocks/page/page";
+@import "modules/blocks/header/header";
+@import "modules/blocks/header/_margin/header_margin";
+@import "modules/blocks/header/__logo/header__logo";
+@import "modules/blocks/header/__title/header__title";
+@import "modules/blocks/header/__subtitle/header__subtitle";
+@import "modules/blocks/header/__button/header__button";
+@import "modules/blocks/header/__image/header__image";
+
+@import "modules/blocks/elements/elements";
+@import "modules/blocks/elements/__item/elements__item";
+@import "modules/blocks/elements/__heading/elements__heading";
+@import "modules/blocks/elements/__title/elements__title";
+@import "modules/blocks/elements/__text/elements__text";
+@import "modules/blocks/elements/__text/_margin-size/elements__text_margin-size_s";
+@import "modules/blocks/elements/__text/_margin-size/elements__text_margin-size_m";
+
+@import "modules/blocks/title/title";
+@import "modules/blocks/title/__information/title__information";
+
+@import "modules/blocks/examples/examples";
+@import "modules/blocks/examples/__items/examples__items";
+@import "modules/blocks/examples/__item/examples__item";
+@import "modules/blocks/examples/__image/examples__image";
+
+@import "modules/blocks/feedback/feedback";
+@import "modules/blocks/feedback/__form/feedback__form";
+@import "modules/blocks/feedback/__field/feedback__field";
+@import "modules/blocks/feedback/__title/feedback__title";
+@import "modules/blocks/feedback/__subtitle/feedback__subtitle";
+@import "modules/blocks/feedback/__container/feedback__container";
+@import "modules/blocks/feedback/__label/feedback__label";
+@import "modules/blocks/feedback/__input/feedback__input";
+@import "modules/blocks/feedback/__input-text/feedback__input-text";
+@import "modules/blocks/feedback/__label-text/feedback__label-text";
+@import "modules/blocks/feedback/__button/feedback__button";
+
+@import "modules/blocks/footer/footer";
+@import "modules/blocks/footer/_margin/footer_margin";
+@import "modules/blocks/footer/__container/footer__container";
+@import "modules/blocks/footer/__title/footer__title";
+@import "modules/blocks/footer/__subtitle/footer__subtitle";
+@import "modules/blocks/footer/__button/footer__button";
+@import "modules/blocks/footer/__image/footer__image";
+@import "modules/blocks/footer/__box/footer__box";
+
+////mixins
+//@include corner-icon('test', 100px, 100px);

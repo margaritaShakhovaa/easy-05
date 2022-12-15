@@ -1,0 +1,9 @@
+.elements__item {
+  display: flex;
+  flex-direction: column;
+  background: #F8F8F8;
+  border-radius: 20px;
+  width: 540px;
+}
+
+/*# sourceMappingURL=elements__item.css.map */

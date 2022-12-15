@@ -1,0 +1,19 @@
+.footer__button {
+	background: $white;
+	border-radius: 8px;
+	width: 470px;
+	margin-top: 174px;
+	padding: 15px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #222;
+	border: none;
+}
+
+.footer__button:hover {
+	opacity: 0.93;
+	cursor: pointer;
+}

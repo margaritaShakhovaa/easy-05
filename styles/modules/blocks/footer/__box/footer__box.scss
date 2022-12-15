@@ -1,0 +1,9 @@
+.footer__box {
+	display: flex;
+	flex-direction: row;
+	background-color: $backgroundColor;
+	height: 100vh;
+	border-radius: 20px;
+	max-height: 470px;
+	width: 100%;
+}

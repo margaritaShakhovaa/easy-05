@@ -1,13 +1,159 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport"
-				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/index.css">
+	<title>Приложение для рисования</title>
 </head>
-<body>
 
+<body class="page">
+
+	<!-- Блок header -->
+	<header class="header header_margin">
+		<div class="header__container">
+			<img src="./images/header/logo.svg" alt="Логотип приложения рисования" class="header__logo">
+			<h1 class="header__title">Не умеете рисовать? Не беда!</h1>
+			<p class="header__subtitle">С помощью нашего приложения вы можете чиркануть каляку и получить шедевр.</p>
+			<button class="header__button" aria-label="Подробнее" type="button">Подробнее</button>
+		</div>
+		<img src="./images/header/header__image.png" alt="Телефон с рисунком" class="header__image">
+	</header>
+
+	<main class="main">
+
+		<!-- Блок features -->
+		<section class="elements elements__features">
+			<div class="elements__item">
+				<h2 class="elements__heading">AI</h2>
+				<h3 class="elements__title">Умный интелект приложения</h3>
+				<p class="elements__text elements__text_margin-size_s">С помощью AI приложение анализирует картины мастеров
+					и современных практиков рисования, и достраивает картину за вас.</p>
+			</div>
+			<div class="elements__item">
+				<h2 class="elements__heading">Ч/Б и Цвет</h2>
+				<h3 class="elements__title">Рисуйте в любом стиле</h3>
+				<p class="elements__text elements__text_margin-size_m">Будь то карандашная каляка-маляка или цветное
+					произведение, приложение поможет в любой ситуации.</p>
+			</div>
+		</section>
+
+		<!-- Блок title -->
+		<section class="title">
+			<h2 class="title__information">Чик-чирик и ваша каляка превращается в изумительное произведение искусства.</h2>
+		</section>
+
+		<!-- Блок examples -->
+		<section class="examples">
+			<ul class="examples__items">
+				<li class="examples__item"><img src="./images/examples/example1.png" alt="Пример 1" class="examples__image"></li>
+				<li class="examples__item"><img src="./images/examples/example2.png" alt="Пример 2" class="examples__image"></li>
+				<li class="examples__item"><img src="./images/examples/example3.png" alt="Пример 2" class="examples__image"></li>
+			</ul>
+		</section>
+
+		<!-- Блок more-features -->
+		<section class="elements elements__more-features">
+			<div class="elements__item">
+				<h2 class="elements__heading">Быстро</h2>
+				<h3 class="elements__title">Проблем с рисованием — нет</h3>
+				<p class="elements__text elements__text_margin-size_s">Рисуйте в приложении доступными кистями: карандаш,
+					маркер, линер, масляная кисть и многие другие...</p>
+			</div>
+			<div class="elements__item">
+				<h2 class="elements__heading">Просто</h2>
+				<h3 class="elements__title">Нарисовали, преобразовали, сохранили</h3>
+				<p class="elements__text elements__text_margin-size_s">Раз, два, три, больше нечего тут рассказать.</p>
+			</div>
+		</section>
+
+		<!-- Блок title -->
+		<section class="title">
+			<h2 class="title__information">Качайте приложение и улучшайте свои художества, а потом хвастайтесь ими!</h2>
+		</section>
+
+		<!-- Блок feedback -->
+		<section class="feedback">
+			<form class="feedback__form" id="feedback-form" name="feedback-form">
+				<fieldset class="feedback__field">
+					<legend class="feedback__title">Хотите нам что-то посоветовать?</legend>
+					<p class="feedback__subtitle">Оставьте заявку и мы свяжемся с вами.</p>
+					<div class="feedback__container">
+						<label class="feedback__label" for="feedback-name">
+							<input class="feedback__input" type="text" id="feedback-name" name="name" placeholder="Ваше Имя" value
+									 	required>
+						</label>
+						<label class="feedback__label" for="feedback-mail">
+							<input class="feedback__input" type="email" id="feedback-mail" name="email" placeholder="Контактный Email"
+									 	value required pattern="\S+@[a-z]+.[a-z]+">
+						</label>
+					</div>
+					<label class="feedback__label-text" for="feedback-text">
+						<textarea class="feedback__input feedback__input-text" name="text" id="feedback-text" rows="4"
+										placeholder="Сообщение" required></textarea>
+					</label>
+					<button class="feedback__button" aria-label="Оставить заявку" type="submit">Оставить заявку</button>
+				</fieldset>
+			</form>
+		</section>
+	</main>
+
+	<footer class="footer footer_margin">
+			<div class="footer__box">
+				<div class="footer__container">
+					<h2 class="footer__title">Хотите скачать приложение?</h2>
+					<p class="footer__subtitle">Качайте в ЭпСтор и ГуглПлэй.</p>
+					<button class="footer__button" aria-label="Уже скоро!" type="submit">Уже скоро!</button>
+				</div>
+				<img src="./images/footer/footer_image.png" alt="Телефон с рисунком" class="footer__image">
+			</div>
+	</footer>
+
+<!--	<div class="modal modal-nav">-->
+<!--		<button class="modal-nav__close-button" type="button" aria-label="Закрыть меню"></button>-->
+<!--		<ul class="modal-nav__nav">-->
+<!--			<li class="modal-nav__item"><a href="#" class="modal-nav__link">Фонд</a></li>-->
+<!--			<li class="modal-nav__item"><a href="#" class="modal-nav__link">Программы</a></li>-->
+<!--			<li class="modal-nav__item"><a href="#" class="modal-nav__link">Для НКО</a></li>-->
+<!--			<li class="modal-nav__item"><a href="#" class="modal-nav__link">Для бизнеса</a></li>-->
+<!--			<li class="modal-nav__item"><a href="#" class="modal-nav__link">Блог</a></li>-->
+<!--			<li class="modal-nav__item"><a href="#" class="modal-nav__link">Партнёры</a></li>-->
+<!--			<li class="modal-nav__item"><a href="#" class="modal-nav__link">Контакты</a></li>-->
+<!--		</ul>-->
+<!--		<div class="modal-nav__lang-container">-->
+<!--			<p class="modal-nav__lang">Ру</p>-->
+<!--			<p class="modal-nav__lang">En</p>-->
+<!--		</div>-->
+<!--		<div class="modal-nav__social-container">-->
+<!--			<a href="#"><img src="./images/icons/Logo-social-vk-black.svg" alt="Вконтакте" class="modal-nav__social"></a>-->
+<!--			<a href="#"><img src="./images/icons/Logo-social-telegram-black.svg" alt="Телеграм" class="modal-nav__social"></a>-->
+<!--		</div>-->
+<!--	</div>-->
+
+<!--	<template id="blogCardTemplate">-->
+<!--		<article class="blog-card">-->
+<!--			<div class="blog-card__type">-->
+<!--				<p class="blog-card__type-text"></p>-->
+<!--			</div>-->
+<!--			<img class="blog-card__image" src="" alt="">-->
+<!--			<div class="blog-card__info">-->
+<!--				<p class="blog-card__date"></p>-->
+<!--				<h2 class="blog-card__title"></h2>-->
+<!--				<p class="blog-card__description"></p>-->
+<!--			</div>-->
+<!--		</article>-->
+<!--	</template>-->
+
+<!--	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> &lt;!&ndash; подключил jquery &ndash;&gt;-->
+<!--	<script src="./vendor/slick/slick.min.js"></script> &lt;!&ndash; подключил слайдер &ndash;&gt;-->
+<!--	<script src="./scripts/slider.js"></script> &lt;!&ndash; подключил скрипт для слайдера &ndash;&gt;-->
+<!--	<script src="./scripts/header.js"></script>-->
+<!--	<script src="./scripts/blog.js"></script>-->
+<!--	<script src="./scripts/closePopup.js"></script>-->
+<!--	<script src="./scripts/newsletter.js"></script>-->
+<!--	<script src="./scripts/support-partner.js"></script>-->
 </body>
+
 </html>
